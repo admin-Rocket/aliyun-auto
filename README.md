@@ -15,7 +15,7 @@ const refreshToeknArry = [
 ""
 ]
 
-# 第三步：通过 action 自动化 打包发布到 github pages
+# 第三步：通过 action 自动化执行代码
 
 # 其他
 

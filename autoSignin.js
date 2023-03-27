@@ -13,9 +13,6 @@ const refreshToeknArry = [
 ]
 // import fetch from 'node-fetch';
 const fetch = require("node-fetch")
-// const notify = require('./sendNotify');
-
-
 !(async () => {
     for (const elem of refreshToeknArry) {
 
@@ -23,7 +20,6 @@ const fetch = require("node-fetch")
             'grant_type': 'refresh_token',
             'refresh_token': elem
         };
-
         //使用 refresh_token 更新 access_token
         fetch(updateAccesssTokenURL, {
             method: "POST",
@@ -32,12 +28,8 @@ const fetch = require("node-fetch")
         })
             .then((res) => res.json())
             .then((json) => {
-                // console.log(json);
-
                 let access_token = json.access_token;
                 console.log(access_token);
-
-
                 //签到
                 fetch(signinURL, {
                     method: "POST",
@@ -49,17 +41,9 @@ const fetch = require("node-fetch")
                         console.log(json);
                     })
                     .catch((err) => console.log(err))
-
             })
             .catch((err) => console.log(err))
-
-
     }
-    // await notify.sendNotifyBark(`v2free 自动签到结果`,allnotify)
-
-
 })().catch((e) => {
     console.error(`❗️  运行错误！\n${e}`)
 }).finally()
-// notify.sendNotify(`v2free 自动签到结果`,allnotify)
-

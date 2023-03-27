@@ -1,21 +1,21 @@
 {
   "name": "aly-setting",
   "version": "1.0.0",
-  "description": "阿里云盘的自动签到脚本，青龙，js",
+  "description": "阿里云盘的自动签到脚本，js",
   "main": "autoSignin.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Anonym-w/autoSigninAliyun.git"
+    "url": "git+https://github.com/yn22638/aliyun-auto.github.io"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Anonym-w/autoSigninAliyun/issues"
+    "url": "https://github.com/yn22638/aliyun-auto.github.io/issues"
   },
-  "homepage": "https://github.com/Anonym-w/autoSigninAliyun#readme",
+  "homepage": "https://github.com/yn22638/aliyun-auto.github.io#readme",
   "dependencies": {
     "node-fetch": "^2.6.2"
   }
